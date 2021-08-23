@@ -423,7 +423,7 @@ def crack2():
 	else:
 		print ("[!] Please Select a Valid Option")
 		crack2()
-	rint("\033[1;97m[+]\033[1;97m Total IDs :\033[1;97m "+str(len(id)))
+	print("\033[1;97m[+]\033[1;97m Total IDs :\033[1;97m "+str(len(id)))
 	print("\033[1;97m[+]\033[1;97m Plz wait clone account will be appear here\033[1;0m")
 	print("\033[1;97m--------------------------------------------------")
 	
