@@ -62,7 +62,7 @@ def reg():
     os.system('clear')
     print logo
     print ''
-    print '\x1b[1;32;1m Enjoy Free Cloning'
+    print '\033[1;97m Enjoy Free Cloning'
     print ''
     time.sleep(1)
     try:
@@ -595,18 +595,19 @@ def choose2():
 		print logo
 		print("\t\033[1;91m  CRACK FROM MANAUL PUBLIC\033[1;0m")
 		print("")
-		idt = raw_input("\033[1;97m[+]\033[1;93m Put ID :\033[1;96m ")
+		idt = raw_input("\033[1;97m[!]\033[1;97m Put ID :\033[1;93m ")
 		print("")
-		print 47 * '-'
+		print("\033[1;97m--------------------------------------------------")
 		print '\x1b[1;93mOnly Type Digit Like 1122,786,1234\x1b[1;91m'
+		print("\033[1;97m--------------------------------------------------")
 		print("")
-		p1 = raw_input(' \x1b[1;92m[1]Name + digit: ')
-		p2 = raw_input(' \x1b[1;92m[2]Name + digit: ')
-		p3 = raw_input(' \x1b[1;92m[3]Name + digit: ')
-		p4 = raw_input(' \x1b[1;92m[4]Name + digit: ')
-		pass5 = raw_input(' \x1b[1;92m[5]Password: ')
-		pass6 = raw_input(' \x1b[1;92m[6]Password: ')
-		pass7 = raw_input(' \x1b[1;92m[7]Password: ')
+		p1 = raw_input(' \x1b[1;97m[1]Name + digit: ')
+		p2 = raw_input(' \x1b[1;97m[2]Name + digit: ')
+		p3 = raw_input(' \x1b[1;97m[3]Name + digit: ')
+		p4 = raw_input(' \x1b[1;97m[4]Name + digit: ')
+		pass5 = raw_input(' \x1b[1;97m[5]Password: ')
+		pass6 = raw_input(' \x1b[1;97m[6]Password: ')
+		pass7 = raw_input(' \x1b[1;97m[7]Password: ')
 		os.system("clear")
 		print logo
 		try:
@@ -631,7 +632,7 @@ def choose2():
 		print logo
 		print("\t\033[1;91m  CRACK FROM MANAUL FOLLOWERS\033[1;0m")
 		print("")
-		idt = raw_input("\033[1;97m[+]\033[1;93m Put ID :\033[1;96m ")
+		idt = raw_input("\033[1;97m[!]\033[1;97m Put ID :\033[1;93m ")
 		print("")
 		print 47 * '-'
 		print '\x1b[1;93mOnly Type Digit Like 1122,786,1234\x1b[1;91m'
