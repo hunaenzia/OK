@@ -81,7 +81,8 @@ def reg():
     else:
         os.system('clear')
         print logo
-        print '\tApproved Failed'
+        print '\t\033[1;97mApproved Failed'
+        print ' '
         print ' \x1b[1;92mYour Id Is Not Approved Already '
         print ' \x1b[1;92mCopy the id and send to admin'
         print ' \x1b[1;92mYour id: ' + to
@@ -93,7 +94,8 @@ def reg():
 def reg2():
     os.system('clear')
     print logo
-    print '\tApproval not detected'
+    print '\t\033[1;97mApproval not detected'
+    print ' '
     print ' \x1b[1;92mCopy and press enter , then select Facebook to continue'
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
@@ -299,7 +301,6 @@ def menu():
         loginvia()
     os.system('clear')
     print logo
-    print ' '
     print("\t  \033[1;92m[+] Logged User : "+name)
     print ' '
     print("\033[0;96m──────────────────────────────────────────────────")
@@ -339,8 +340,7 @@ def crack():
 		loginvia()
 	os.system("clear")
 	print logo
-	print ' '
-	print("\t   CRACK FROM AUTO PASS")
+	print("\t   \033[1;91mCRACK FROM AUTO PASS")
 	print ' '
 	print(" \033[0;97m[1] Crack From FriendList")
 	print(" \033[0;97m[2] Crack From Public")
@@ -425,8 +425,8 @@ def crack2():
 		crack2()
 	print("\033[1;97m[+]\033[1;97m Total IDs :\033[1;97m "+str(len(id)))
 	print("\033[1;97m[+]\033[1;97m Plz wait clone account will be appear here\033[1;0m")
-	print("\033[1;96m--------------------------------------------------")
-	
+	print("\033[1;97m--------------------------------------------------")
+	print ' '
 	
         def main(arg):
 		user=arg
@@ -562,7 +562,7 @@ def crack2():
 	print ('\033[1;97m[+]\033[1;97m Process Has Been Completed')
 	print('\033[1;97m[+]\033[1;97m Total CP/OK:\033[0;97m  '+str(len(cps))+'/\033[1;97m '+str(len(oks)))
 	print("\033[1;96m--------------------------------------------------")
-	raw_input("Press Enter To Main Menu Back")
+	raw_input("\033[0;91mPress Enter To Main Menu Back")
 	menu()
 
 ###CHOICEPASSMENU###
@@ -578,7 +578,7 @@ def choose():
 		loginvia()
 	os.system("clear")
 	print logo
-	print("\t   CRACK FROM MANUAL PASS")
+	print("\t   \033[1;91mCRACK FROM MANUAL PASS")
 	print("")
 	print(" \033[0;97m[1] Crack From Public")
 	print(" \033[0;97m[2] Crack From Followers")
@@ -618,7 +618,7 @@ def choose2():
 		except KeyError:
 			print('\n[!] Error 404 . ID Link '+idt+' Have Privacy On Friendlist OR IS Not Valid')
 			raw_input("\nPress Enter To Back ")
-			crack()
+			choose()
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token, headers=header)
 		z = json.loads(r.text)
 		for i in z["data"]:
@@ -654,7 +654,7 @@ def choose2():
 		except KeyError:
 			print('\n[!] Error 404 . ID Link '+idt+' Donot Have Followers OR IS Not Valid')
 			raw_input("\nPress Enter To Back ")
-			crack()
+			choose()
 		r = requests.get("https://graph.facebook.com/"+idt+"/subscribers?access_token="+token+"&limit=5000", headers=header)
 		z = json.loads(r.text)
 		for i in z["data"]:
@@ -667,10 +667,11 @@ def choose2():
 		menu()
 	else:
 		print ("[!] Please Select a Valid Option")
-		bangla2()
+		choose2()
 	print("\033[1;97m[+]\033[1;97m Total IDs :\033[1;97m "+str(len(id)))
 	print("\033[1;97m[+]\033[1;97m Plz wait clone account will be appear here\033[1;0m")
 	print("\033[1;97m--------------------------------------------------")
+	print ' '
 	
 	
         def main(arg):
@@ -804,7 +805,7 @@ def choose2():
 	print ('\033[1;97m[+]\033[1;97m Process Has Been Completed')
 	print('\033[1;97m[+]\033[1;97m Total CP/OK:\033[0;97m  '+str(len(cps))+'/\033[1;92m '+str(len(oks)))
 	print("\033[1;97m--------------------------------------------------")
-	raw_input("Press Enter To Main Menu Back")
+	raw_input("\033[0;97mPress Enter To Main Menu Back")
 	menu()
 	
 if __name__ == '__main__':
