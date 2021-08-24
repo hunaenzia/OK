@@ -378,7 +378,7 @@ def crack2():
 			q = json.loads(r.text)
 			print("\t\033[1;91m  CRACK FROM AUTO PUBLIC\033[1;0m")
 			print("")
-			print("[✓] Public ID: "+q["name"])
+			print("[✓] Public ID : "+q["name"])
 		except KeyError:
 			print('\n[!] Error 404 . ID Link '+idt+' Have Privacy On Friendlist OR IS Not Valid')
 			raw_input("\nPress Enter To Back ")
