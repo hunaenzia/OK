@@ -148,7 +148,7 @@ def logging():
 def saving():
     titik = [".   ","..  ","... "]
     for o in titik:
-        print("\r\033[1;32m[!] Tool Saving Your Token\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
+        print("\r\033[1;32m[!] Tool Saving Token\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
 def updateing():
     titik = [".   ","..  ","... "]
     for o in titik:
