@@ -49,7 +49,7 @@ logo = """
 \033[1;97m    _________    ____  ____
 \033[1;96m   / ____/   |  / __ \/  _/
 \033[1;97m  / /_  / /| | / /_/ // /  
-\033[1;96m / __/ / ___ |/ _, _// /     \033[1;91m║ Version: 2.0
+\033[1;96m / __/ / ___ |/ _, _// /     \033[1;91m║ Version: 3.0
 \033[1;97m/_/   /_/  |_/_/ |_/___/   
 \033[1;97m--------------------------------------------------
 \033[1;97mAuthor     : Fariya Khan Official.
@@ -62,7 +62,7 @@ def reg():
     os.system('clear')
     print logo
     print ''
-    print '\033[1;97m Enjoy Free Cloning'
+    print '\t\033[1;97m Enjoy Free Cloning'
     print ''
     time.sleep(1)
     try:
@@ -83,9 +83,9 @@ def reg():
         print logo
         print '\t\033[1;97mApproved Failed'
         print ' '
-        print ' \x1b[1;92mYour Id Is Not Approved Already '
-        print ' \x1b[1;92mCopy the id and send to admin'
-        print ' \x1b[1;92mYour id: ' + to
+        print ' \x1b[1;97mYour Id Is Not Approved Already '
+        print ' \x1b[1;97mCopy The Id And Send To Admin'
+        print ' \033[1;97mYour id:\033[1;92m ' + to
         raw_input('\x1b[1;93m Press enter to send id')
         os.system('xdg-open https://www.facebook.com/Faritricker007')
         reg()
@@ -94,18 +94,18 @@ def reg():
 def reg2():
     os.system('clear')
     print logo
-    print '\t\033[1;97mApproval not detected'
+    print '\t\033[1;97mApproval Not Detected'
     print ' '
-    print ' \x1b[1;92mCopy and press enter , then select Facebook to continue'
+    print ' \x1b[1;92mCopy And Press Enter , Then Select Facebook To Continue'
     id = uuid.uuid4().hex[:50]
     print ' Your id: ' + id
     print ''
-    raw_input(' Press enter to go to Facebook ')
+    raw_input(' Press Enter To Go To Facebook ')
     os.system('xdg-open https://www.facebook.com/Faritricker007')
     sav = open('/sdcard/.fariya.txt', 'w')
     sav.write(id)
     sav.close()
-    raw_input('\x1b[1;92m Press enter to check Approval ')
+    raw_input('\x1b[1;92m Press Enter To Check Approval ')
     reg()
 
 
@@ -145,19 +145,19 @@ def jalan(z):
 def logging():
     titik = [".   ","..  ","... "]
     for o in titik:
-        print("\r\033[1;32m[+] Logging In\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
+        print("\r\033[1;32m[!] Logging In\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
 def saving():
     titik = [".   ","..  ","... "]
     for o in titik:
-        print("\r\033[1;32m[+] Tool Saving Token\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
+        print("\r\033[1;32m[!] Tool Saving Your Token\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
 def updateing():
     titik = [".   ","..  ","... "]
     for o in titik:
-        print("\r\033[1;32m[+] Getting Updates\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
+        print("\r\033[1;32m[!] Getting Updates\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
 def logout():
     titik = [".   ","..  ","... "]
     for o in titik:
-        print("\r\033[1;32m[+] Logging Out\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
+        print("\r\033[1;32m[!] Logging Out\033[0;97m "+o),;sys.stdout.flush();time.sleep(1)
 		
 
 idh = []
@@ -558,10 +558,10 @@ def crack2():
 		
 	p = ThreadPool(30)
 	p.map(main, id)
-	print("\033[1;96m--------------------------------------------------")
+	print("\033[1;97m--------------------------------------------------")
 	print ('\033[1;97m[+]\033[1;97m Process Has Been Completed')
 	print('\033[1;97m[+]\033[1;97m Total CP/OK:\033[0;97m  '+str(len(cps))+'/\033[1;97m '+str(len(oks)))
-	print("\033[1;96m--------------------------------------------------")
+	print("\033[1;97m--------------------------------------------------")
 	raw_input("\033[0;91mPress Enter To Main Menu Back")
 	menu()
 
@@ -598,7 +598,7 @@ def choose2():
 		idt = raw_input("\033[1;97m[!]\033[1;97m Put ID :\033[1;93m ")
 		print("")
 		print("\033[1;97m--------------------------------------------------")
-		print '\x1b[1;93mOnly Type Digit Like 1122,786,1234\x1b[1;91m'
+		print '\t\x1b[1;93mOnly Type Digit Like 1122,786,1234\x1b[1;91m'
 		print("\033[1;97m--------------------------------------------------")
 		print("")
 		p1 = raw_input(' \x1b[1;97m[1]Name + digit: ')
@@ -634,9 +634,9 @@ def choose2():
 		print("")
 		idt = raw_input("\033[1;97m[!]\033[1;97m Put ID :\033[1;93m ")
 		print("")
-		print 47 * '-'
-		print '\x1b[1;93mOnly Type Digit Like 1122,786,1234\x1b[1;91m'
-		print("")
+		print("\033[1;97m--------------------------------------------------")
+		print '\t\x1b[1;93mOnly Type Digit Like 1122,786,1234\x1b[1;91m'
+		print("\033[1;97m--------------------------------------------------")
 		p1 = raw_input('\x1b[1;97m[1]Name + digit: ')
 		p2 = raw_input('\x1b[1;97m[2]Name + digit: ')
 		p3 = raw_input('\x1b[1;97m[3]Name + digit: ')
@@ -672,7 +672,6 @@ def choose2():
 	print("\033[1;97m[+]\033[1;97m Total IDs :\033[1;97m "+str(len(id)))
 	print("\033[1;97m[+]\033[1;97m Plz wait clone account will be appear here\033[1;0m")
 	print("\033[1;97m--------------------------------------------------")
-	print("")
 	
 	
         def main(arg):
