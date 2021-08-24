@@ -80,7 +80,7 @@ def reg():
     else:
         os.system('clear')
         print logo
-        print '\t\033[1;97mApproved Failed'
+        print '\t\033[1;91mApproved Failed'
         print ' '
         print ' \x1b[1;97mYour Id Is Not Approved Already '
         print ' \x1b[1;97mCopy The Id And Send To Admin'
